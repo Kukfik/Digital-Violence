@@ -22,17 +22,26 @@
 
 <nav class="nav">
   <div class="container nav-container">
+
     <a href="#home" class="logo">Global Citizens</a>
 
-    <div class="menu">
+    <!-- Burger button -->
+    <button class="burger" id="burger-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="menu" id="menu">
       <a href="#what">INFORMATION</a>
       <a href="#Examples">EXAMPLES</a>
       <a href="#leaked">IF LEAKED</a>
       <a href="#prevent">HOW TO PREVENT</a>
     </div>
+
   </div>
 </nav>
-
 
 <!-- HERO -->
 <section id="home" class="hero" style="
@@ -63,7 +72,7 @@
 
   <!-- WHAT -->
   <section id="what" class="section">
-    <div class="container">
+
       <h2 class="animate">Main Information</h2>
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
@@ -73,7 +82,7 @@
         </div>
       </div>
 
-    <div class="container">
+
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
           <div class="step-badge">02</div>
@@ -84,7 +93,7 @@
         </div>
       </div>
 
-    <div class="container">
+
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
           <div class="step-badge">03</div>
@@ -95,8 +104,7 @@
             <div class="step-point"><strong>Biometrics</strong><p>fingerprint, iris, and facial databases</p></div>
         </div>
       </div>
-      
-    <div class="container">
+
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
           <div class="step-badge">04</div>
@@ -104,7 +112,7 @@
             <div class="step-point"><p>Privacy means controlling your personal information — who can access it, how it’s used, and whether it’s shared. Loss of privacy can lead to discrimination, chilling effects on free expression, identity theft, and concentration of power in organizations that control data</p></div>
         </div>
       </div>
-      
+ 
 
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
@@ -116,7 +124,7 @@
             <div class="step-point"><strong>Power imbalances</strong><p>platforms and governments gaining leverage over individuals</p></div>
         </div>
       </div>
-
+    </div>
 
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
@@ -125,7 +133,7 @@
           <div class="step-point"><p>Data loss — accidental deletion, hardware failure, or theft — can expose or permanently remove control over personal information. Responding to incidents may further reveal sensitive details. Robust backups and encryption reduce the harm from data loss</p></div>
         </div>
       </div>
-
+    </div>
 
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
@@ -138,7 +146,7 @@
             <div class="step-point"><strong>Incident response</strong><p>have a clear plan to detect, contain, and recover</p></div>
         </div>
       </div>
-
+    </div>
   <section class="image-card-section">
     <div class="image-card">
     <img src="images/photo_2025-11-13_20-34-57.jpg" alt="security cam" class="image-card-bg">
@@ -151,7 +159,6 @@
 
   <!-- examples -->
   <section id="Examples" class="section">
-    <div class="container">
 
 
 
@@ -170,22 +177,21 @@
 
 <section class="image-card-section">
   <div class="image-card">
-            <div class="step-badge">01</div>
+            <div class="image-card-badge">01</div>
     <img src="images/cambridge-analytica.jpg" alt="llustration of the Cambridge Analytica data scandal" class="image-card-bg">
 
     <div class="image-card-overlay"></div>
 
  <div class="container image-card-content">
   <div class="step-inner">
-    <h3>The Facebook–Cambridge Analytica Scandal: When “Likes” Became Weapons</h3>
+    <h3 class='image-card-title'>The Facebook–Cambridge Analytica Scandal: When “Likes” Became Weapons</h3>
   </div>
 </div>
 
   </div>
   </div>
-
-
 </section>
+
       <div class="step-card animate" data-step="1">
         <div class="step-inner">
           <div class="step-list">
@@ -215,7 +221,7 @@
 
   <section class="image-card-section">
   <div class="image-card">
-            <div class="step-badge">02</div>
+            <div class="image-card-badge">02</div>
     <img src="images/Shanghai.jpg" alt="Shanghai Police Database Leak" class="image-card-bg">
 
     <div class="image-card-overlay"></div>
@@ -249,7 +255,7 @@
 
   <section class="image-card-section">
   <div class="image-card">
-            <div class="step-badge">03</div>
+            <div class="image-card-badge">03</div>
     <img src="images/SK-Telecom-Says-Malware-Incident-Leaked-Customer-USIM-Data.png" alt="SK Telecom" class="image-card-bg">
 
     <div class="image-card-overlay"></div>
@@ -277,7 +283,7 @@
 
   <section class="image-card-section">
   <div class="image-card">
-            <div class="step-badge">04</div>
+            <div class="image-card-badge">04</div>
     <img src="images/photo_57677.jpg" alt="Kazakhstan National Data Leak" class="image-card-bg">
 
     <div class="image-card-overlay"></div>
@@ -385,7 +391,6 @@
 
         <!-- PREVENT -->
   <section id="prevent" class="section">
-    <div class="container">
 
       <h2 class="animate">How to Prevent Your Information from Spreading</h2>
 
@@ -396,15 +401,15 @@
 
 
       <div class="step-card animate" data-step="1">
-        <div class="step-badge">01</div>
-        <div class="step-inner">
+          <div class="step-inner">
+          <div class="step-badge">01</div>
           <h3>Strengthen Your Digital Hygiene</h3>
-          <div class="step-list">
+
             <div class="step-point"><strong>Use a Password Manager</strong><p>Create long, complex, and unique passwords for every account without the burden of remembering them all</p></div>
             <div class="step-point"><strong>Enable Multi-Factor Authentication (MFA/2FA) Everywhere</strong><p>This is the single most effective step to secure your accounts beyond a password</p></div>
             <div class="step-point"><strong>Beware of Phishing</strong><p>Don't click on links or open attachments in suspicious emails or texts. Verify the sender's address. When in doubt, go directly to the company's website</p></div>
             <div class="step-point"><strong>Keep Software Updated</strong><p>Regularly update your operating system, apps, and antivirus software. These updates often include critical security patches</p></div>
-          </div>
+
         </div>
       </div>
 
@@ -466,4 +471,3 @@
   <script src="js/main.js"></script>
 </body>
 </html>
-
