@@ -45,4 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.animate, .step-card, .image-card, .final-card, h2').forEach(el => {
     observer.observe(el);
   });
+
 });
+
+const burger = document.getElementById("burger-btn");
+  const menu = document.getElementById("menu");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    menu.classList.toggle("open");
+  });
